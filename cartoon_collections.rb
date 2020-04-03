@@ -7,7 +7,11 @@ end
 def summon_captain_planet(planeteer_calls)
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
+<<<<<<< HEAD
   return planeteer_calls.map {|e| "#{e.capitalize}!"}
+=======
+  planeteer_calls.map {|e| "#{e.capitalize}!"}
+>>>>>>> 7587362aa3658b7455239867693a56858fad0c1e
 end
 
 def long_planeteer_calls(planeteer_calls)
@@ -18,7 +22,11 @@ def long_planeteer_calls(planeteer_calls)
     result = true if e.length > 4
     break if e.length > 4
   }
+<<<<<<< HEAD
   return result
+=======
+  result
+>>>>>>> 7587362aa3658b7455239867693a56858fad0c1e
 end
 
 def find_valid_calls(planeteer_calls)
@@ -30,5 +38,9 @@ def find_valid_calls(planeteer_calls)
     result = valid_calls.find { |v| e == v }
     break if result != nil
   }
+<<<<<<< HEAD
   return result
+=======
+  result
+>>>>>>> 7587362aa3658b7455239867693a56858fad0c1e
 end
